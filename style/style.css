@@ -1,0 +1,18 @@
+*{
+    color: white;
+    margin: auto;
+}
+
+.logo{
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apr_logo{
+    color: red;
+}
