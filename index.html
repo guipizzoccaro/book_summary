@@ -5,27 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Book Summary tests</title>
 </head>
 
 <body>
+    <div id="logo">
+        Logo
+    </div>
     <header>
-        <section class="logo">
-            <div class="apr_logo">
-                <h1>Book Summary</h1>
-                <p>Resumindo todos os livros</p>
-            </div>
-        </section>
+
+        <nav>
+            <ul>
+                <a href="#logo">
+                    <li>Home</li>
+                </a>
+                <a href="#quem">
+                    <li> Quem Somos</li>
+                </a>
+                <a href="#resenhas">
+                    <li>Resenhas</li>
+                </a>
+                <a href="#contato">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
 
+        <section class="container">
+            <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true, "freeScroll": true }'>
+                <div class="gallery-cell">
+                    <img src="./img/capas/anne_frank.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="./img/capas/ligadas_e_antenadas.jpg" alt="">
+                </div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+
+            </div>
+        </section>
+
+
+
+        <section id="quem">
+
+            <img src="./img/2.1.png" alt="As meninas">
+
+            <div id="text-quem">
+                <h2>Quem Somos</h2>
+                <p>Somos um grupo de amigas apaixonadas pela leitura, principalmente pela literatura.
+                    Atualmente estamos no 2° Ano do Ensino Médio de uma escola na Zona Sul de São Paulo.</p>
+                <p>Fizemos o site com o intuito de compartilhar nossas paixões
+                    e críticas sobre determinados livros, além de praticar para algumas propostas de redação de
+                    vestibulares.
+                </p>
+                <p>Espero que curtam nosso site e compartilhem com seus amigos!</p>
+                <blockquote>
+                    <cite>Dos livros à vida,</cite>
+                    <cite>Geh, Duda e Sarah</cite>
+                </blockquote>
+            </div>
+
+
+
+        </section>
+
+        <section id="resenhas">
+            <h2>Resenhas</h2>
+        </section>
+
+        <section id="contato">
+            <h2>Contatos</h2>
+        </section>
+
     </main>
 
     <footer>
-
+        <p>&copy; Jardim literario 2021</p>
+        <span><a href="" id="voltar">Subir</a></span>
     </footer>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
