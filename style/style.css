@@ -3,6 +3,8 @@
  --orange:#EE5622;
  --green:#3A7D44;
  --yellow:#F3E06A;
+
+ font-size: 62.5%;
 }
 
 *{
@@ -14,18 +16,27 @@
 }
 
 
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+
 
 a, a li{
+
     text-decoration: none;
     color: white;
 }
 
+
 header{
-    
-    
+
     display: flex;
     justify-content: center;
     padding: 15px;
+
+    font-size: 1.3rem;
 }
 
 nav ul{
@@ -46,73 +57,111 @@ nav li{
     border-radius: 10px;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-    
-   
-    
-}
-
-.main-gallery {
-    width: 80vw;
-    
-    
-  }
-
-.gallery-cell {
-    width: 100%;
-    height: 10vh;
-    gap: 1rem;
-    
-    
-}
-
-.gallery-cell:before {
-    display: block;
+main{
     text-align: center;
-
-  }
-
-
-
-main #quem{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-
-    flex-wrap: wrap;
 }
 
-#quem h2{
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
     color: var(--orange);
     text-align: center;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.cabeca{
+    height:20.2rem;
+    width: 100%;
+    
+}
+
+#logo{
+    
+    width: 30rem;
+    background: url(/img/logo.png) no-repeat;
+    
+
+}
 
 
+main #quem{
+    margin-top: 5vh;
+    
+    text-align: justify;
 
+    width: 100%;
 
+}
+
+#as_meninas{
+    height: 30vh
+}
+
+#foto{
+    width: 100%;
+    height: 100%;
+    background:url(/img/2.1.png) no-repeat center/contain;
+    
+}
+
+#text-quem{
+    
+   margin: 1rem 3rem;
+
+}
+
+ blockquote{
+    margin-top: 3rem;
+    text-align: right;
+}
 
 
 footer{
+    margin-top: 3rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-self: center;
+
+    background: var(--orange);
+
+    
+    
 }
 
+footer p{
+    color: cornsilk;
+}
 
 footer #voltar{
-    
-    color: red;
-    
+    color: red; 
 }
 
 
-@media screen and ( min-width: 768px ) {
-    /* half-width cells for larger devices */
-    .gallery-cell { width: 20%; }
-  }
+@media (min-width: 800px)
+{
+    #quem{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    #as_meninas{
+        height:100%;
+        margin-left: 3rem;
+    }
+
+    #text-quem{
+        margin-right: 3rem;
+        width: min(40vw, 500px);
+        padding: 8rem 0;
+}
+}
