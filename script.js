@@ -9,6 +9,9 @@ $(document).ready(function () {
             0: {
                 items: 2
             },
+            300: {
+                items: 3
+            },
             600: {
                 items: 4
             }
