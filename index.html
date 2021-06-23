@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Stars -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style/style.css">
-    <title>Book Summary tests</title>
+    <title>Jardim Literário</title>
 </head>
 
 <body>
@@ -44,13 +51,71 @@
 
     <main>
 
-        <section class="container">
+        <section class="library owl-carousel">
+            <!-- Carousel -->
+            <div class="item">
+
+                <div id="img-01"></div>
+                <h3>O diário de Anne Frank</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+            </div>
+
+            <div class="item">
+                <div id="img-02"></div>
+                <h3>Para todos os garotos que já amei</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+            <div class="item">
+                <div id="img-03"></div>
+                <h3>Ligadas e antenadas</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+            <div class="item">
+                <div id="img-04"></div>
+                <h3>A rainha vermelha</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+            <div class="item">
+                <div id="img-05"></div>
+                <h3>A prometida</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+            <div class="item">
+                <div id="img-06"></div>
+                <h3>Porque só as princesas se dão bem</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
 
         </section>
-
-
-
-
 
         <section id="quem">
             <div id="as_meninas">
@@ -80,6 +145,52 @@
 
         <section id="resenhas">
             <h2>Resenhas</h2>
+
+
+
+            <div class="container">
+
+                <div class="cards">
+                    <div class="card">
+
+                        <h3>O diário de Anne Frank</h3>
+                        <img src="/img/capas/anne_frank.jpg" alt="">
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.aaa</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Para todos os garotos que já amei</h3>
+                        <img src="/img/capas/para_todos_os_garotos.jpg" alt="">
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.aaa</p>
+
+                    </div>
+
+                    <div class="card">
+                        <h3>Ligadas e antenadas</h3>
+                        <img src="/img/capas/ligadas_e_antenadas.jpg" alt="">
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.aaa</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>A rainha vermelha</h3>
+                        <img src="/img/capas/rainha_vermelha.jpg" alt="">
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.aaa</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>A prometida</h3>
+                        <img src="/img/capas/prometida.jpg" alt="">
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.aaa</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Porque só as princesas se dão bem</h3>
+                        <img src="/img/capas/princesas.jpg" alt="">
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.aaa</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="contato">
@@ -93,7 +204,9 @@
         <span><a href="" id="voltar">Subir</a></span>
     </footer>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
